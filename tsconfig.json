@@ -1,0 +1,40 @@
+{
+  "Produits": [
+    {
+      "nom": "Tee-shirt",
+      "couleur": "Bleu",
+      "taille": "M",
+      "prixHc": "8"
+    },
+    {
+      "nom": "Veste",
+      "couleur": "Noir",
+      "taille": "XL",
+      "prixHc": "20"
+    },
+    {
+      "nom": "Pull",
+      "couleur": "Rouge",
+      "taille": "S",
+      "prixHc": "30"
+    },
+    {
+      "nom": "Jean",
+      "couleur": "gris",
+      "taille": "S",
+      "prixHc": "25"
+    },
+    {
+      "nom": "Ceinture",
+      "couleur": "noir",
+      "taille": "XL",
+      "prixHc": "5"
+    },
+    {
+      "nom": "Chemise",
+      "couleur": "Blanche",
+      "taille": "XL",
+      "prixHc": "30"
+    }
+  ]
+}
