@@ -16,10 +16,24 @@ class Product
             $priceHc;
     public function __construct($nom=null, $color=null, $size=null, $price=null)
     {
-        $this->id = $this->id+1;
+        $this->id = $this->id;
         $this->name = $nom;
         $this->color = $color;
         $this->size = $size;
         $this->priceHc = $price;
     }
+}
+
+class Achat{
+    public $produit;
+    public $amount;
+
+    public function __construct($products, $amount)
+    {
+        $this->produit = $products;
+        $this->amount = $amount;
+
+    }
+
+
 }

@@ -15,16 +15,19 @@ class Loader
         $parse_json = json_decode($json);
            $this->loadedFile = $parse_json;
         // creation d'un tableau pour ranger les produits;
-        $table = array_map( function($p){
+        $produits = array_map( function($p){
             $produit = new Product();
-            $produit->nom = $p->nom;
-            $produit->couleur = $p->couleur;
-            $produit->taille = $p->taille;
-            $produit->prixHc = $p->prixHc;
+
+            $produit->id = $p->id;
+            $produit->name = $p->nom;
+            $produit->color = $p->couleur;
+            $produit->size = $p->taille;
+            $produit->priceHc = $p->prixHc;
             return $produit;
         }, $this->loadedFile->Produits);
-        $this->loadedFile = $table;
+        $this->loadedFile = $produits;
+        return $produits;
     }
 }
 $a = new Loader();
-$a->jsonLoader('tsconfig.json');
+$a->jsonLoader('produits.json');

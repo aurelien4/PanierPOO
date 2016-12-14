@@ -6,14 +6,9 @@
  * Date: 02/12/2016
  * Time: 10:48
  */
-class CalculatorTva
+class   CalculatorTva
 {
-    public $tva;
-    public function calculatedTva($prixHc){
 
-        $tva = $prixHc * 0.196;
-        $this->tva = $tva;
-    }
 }
 
 /*
